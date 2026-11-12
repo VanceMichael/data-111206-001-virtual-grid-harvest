@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "python3 portal.py",
-    "test:browser": "python3 -m unittest discover -s tests -p test_browser.py -v"
+    "test:browser": "python3 -m unittest discover -s tests -p test_browser.py -v",
+    "test:collector": "python3 -m unittest discover -s tests -p 'test_*collector*.py' -v",
+    "showcase": "python3 showcase.py"
   }
 }
