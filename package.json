@@ -1,0 +1,9 @@
+{
+  "name": "exhibitor-directory-reader",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 portal.py",
+    "test:browser": "python3 -m unittest discover -s tests -p test_browser.py -v"
+  }
+}

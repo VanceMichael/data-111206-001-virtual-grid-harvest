@@ -26,4 +26,8 @@ portal.py 管理本机页面与目录代际，fixtures/exhibitors.json 提供虚
 
 浏览器需要与 Playwright 1.56.0 配套的 Chromium。依赖环境中已预装浏览器及系统库；环境准备可执行 `python3 -m playwright install --with-deps chromium`，这一步不放在应用启动或测试里。`python3 portal.py` 会打印动态本机地址，页面参数 `?mutate=1` 会在若干次滚动后模拟一次插入。
 
+需要固定监听地址时，运行 `python3 portal.py --host 127.0.0.1 --port 8765` 并访问打印的地址。页面和 `/seed`、`/advance`、`/portal.js` 由同一个 Python 服务提供，不能用静态文件服务器替代。按 Ctrl+C 停止服务。
+
+提供 npm 的环境也可用 `npm start -- --host 127.0.0.1 --port 8765` 启动同一服务，以及 `npm run test:browser` 执行真实无头浏览器的首屏、节点复用和来源变更测试。`package-lock.json` 不包含任何 npm 依赖；npm 仅作为统一命令入口，不改变 Python API、演示或读取行为。完整测试包含固定端口启动入口的回归验证，仍使用上面的 unittest 命令。
+
 也可以先用 `docker build -t exhibitor-reader .` 构建已锁定基础镜像和依赖的应用容器，再运行 `docker run --rm --network none exhibitor-reader`。测试命令为 `docker run --rm --network none exhibitor-reader python3 -m unittest discover -s tests -v`。构建阶段需要取镜像与依赖，运行阶段不下载内容。

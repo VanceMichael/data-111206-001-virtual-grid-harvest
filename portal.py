@@ -1,3 +1,4 @@
+import argparse
 import json
 import threading
 from contextlib import contextmanager
@@ -6,8 +7,8 @@ from pathlib import Path
 
 
 class Portal(ThreadingHTTPServer):
-    def __init__(self):
-        super().__init__(('127.0.0.1', 0), Handler)
+    def __init__(self, host='127.0.0.1', port=0):
+        super().__init__((host, port), Handler)
         self.rows = json.loads(Path('fixtures/exhibitors.json').read_text())
         self.revision = 1
         self.lock = threading.Lock()
@@ -54,6 +55,15 @@ def serve():
 
 
 if __name__ == '__main__':
-    with serve() as base:
-        print(base, flush=True)
-        threading.Event().wait()
+    parser = argparse.ArgumentParser(description='启动本地合成展商目录')
+    parser.add_argument('--host', default='127.0.0.1')
+    parser.add_argument('--port', type=int, default=0)
+    args = parser.parse_args()
+    server = Portal(args.host, args.port)
+    print(f'http://{args.host}:{server.server_port}', flush=True)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
