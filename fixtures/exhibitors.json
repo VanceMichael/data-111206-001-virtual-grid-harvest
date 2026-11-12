@@ -1,0 +1,121 @@
+[
+  {
+    "reference": "EXH-001",
+    "name": "合成展商01",
+    "country": "合成市场甲",
+    "booth": "A-01",
+    "description": "虚构展商资料 1"
+  },
+  {
+    "reference": "EXH-002",
+    "name": "合成展商02",
+    "country": "合成市场乙",
+    "booth": "A-02",
+    "description": "虚构展商资料 2"
+  },
+  {
+    "reference": "EXH-003",
+    "name": "合成同名企业",
+    "country": "合成市场甲",
+    "booth": "A-03",
+    "description": "虚构展商资料 3"
+  },
+  {
+    "reference": "EXH-004",
+    "name": "合成展商04",
+    "country": "合成市场乙",
+    "booth": "A-04",
+    "description": "虚构展商资料 4"
+  },
+  {
+    "reference": "EXH-005",
+    "name": "合成展商05",
+    "country": "合成市场甲",
+    "booth": "A-05",
+    "description": "虚构展商资料 5"
+  },
+  {
+    "reference": "EXH-006",
+    "name": "合成展商06",
+    "country": "合成市场乙",
+    "booth": "A-06",
+    "description": "虚构展商资料 6"
+  },
+  {
+    "reference": "EXH-007",
+    "name": "合成展商07",
+    "country": "合成市场甲",
+    "booth": "A-07",
+    "description": "虚构展商资料 7"
+  },
+  {
+    "reference": "EXH-008",
+    "name": "合成展商08",
+    "country": "合成市场乙",
+    "booth": "A-08",
+    "description": "虚构展商资料 8"
+  },
+  {
+    "reference": "EXH-009",
+    "name": "合成同名企业",
+    "country": "合成市场甲",
+    "booth": "A-09",
+    "description": "虚构展商资料 9"
+  },
+  {
+    "reference": "EXH-010",
+    "name": "合成展商10",
+    "country": "合成市场乙",
+    "booth": "A-10",
+    "description": "虚构展商资料 10"
+  },
+  {
+    "reference": "EXH-011",
+    "name": "合成展商11",
+    "country": "合成市场甲",
+    "booth": "A-11",
+    "description": "虚构展商资料 11"
+  },
+  {
+    "reference": "EXH-012",
+    "name": "合成展商12",
+    "country": "合成市场乙",
+    "booth": "A-12",
+    "description": "虚构展商资料 12"
+  },
+  {
+    "reference": "EXH-013",
+    "name": "合成展商13",
+    "country": "合成市场甲",
+    "booth": "A-13",
+    "description": "虚构展商资料 13"
+  },
+  {
+    "reference": "EXH-014",
+    "name": "合成展商14",
+    "country": "合成市场乙",
+    "booth": "A-14",
+    "description": "虚构展商资料 14"
+  },
+  {
+    "reference": "EXH-015",
+    "name": "合成展商15",
+    "country": "合成市场甲",
+    "booth": "A-15",
+    "description": "虚构展商资料 15"
+  },
+  {
+    "reference": "EXH-016",
+    "name": "合成展商16",
+    "country": "合成市场乙",
+    "booth": "A-16",
+    "description": "虚构展商资料 16"
+  },
+  {
+    "reference": "EXH-017",
+    "name": "合成展商17",
+    "country": "合成市场甲",
+    "booth": "A-17",
+    "description": "虚构展商资料 17"
+  }
+]
